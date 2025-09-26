@@ -136,24 +136,17 @@ function showCart() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const toggleSpinner = (show) => {
+  let spinner = document.getElementById("spinner");
+  if (!spinner) {
+    spinner = document.createElement("div");
+    spinner.id = "spinner";
+    spinner.className = "text-center py-10 text-green-700 font-bold";
+    spinner.textContent = "Loading...";
+    document.getElementById("tree-container").appendChild(spinner);
+  }
+  spinner.style.display = show ? "block" : "none";
+};
 
 
 
@@ -163,3 +156,4 @@ function showCart() {
 
 
 loadAllCategories();
+loadAllPlants();
