@@ -2,8 +2,8 @@ const loadAllCategories = () => {
     fetch("https://openapi.programming-hero.com/api/categories")
     .then((res) => res.json())
     .then((data) => displayCategories(data.categories));
-
 };
+
 // 1..Category Loading Load Tree Categories dynamically on the left side
 const displayCategories = (categories) => {
     const categoriesContainer = document.getElementById("all-categories");
@@ -53,11 +53,11 @@ const loadByCategory = (id, btn) => {
       toggleSpinner(false);
     });
 };
+
 // 2.. Category Click → Tree Data On clicking a category: load trees of that category.
 const displayPlants = (plants) => {
   const treeContainer  = document.getElementById("tree-container");
   treeContainer .innerHTML = "";
-
 // 3.. Card Contents Each card includes:
   plants.forEach(plant => {
     const card = document.createElement("div");
