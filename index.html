@@ -44,33 +44,27 @@
         </div>
     </div>
 
-    <section class="py-6 bg-green-50">
-        <h2 class="text-center text-3xl font-bold mb-8">Choose Your Trees</h2>
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 max-w-7xl mx-auto px-6">
-             
-        <aside class="lg:col-span-2">
-            <h3 class="font-semibold mb-4">Categories</h3>
-            <div id="all-categories" class="flex flex-col gap-2"></div>
-        </aside>
-        <main id="tree-container" class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <aside class="lg:col-span-3">
-          <h3 class="font-semibold mb-4">Your Cart</h3>
-          <ul id="cart-list" class="space-y-2"></ul>
-          <p id="cart-total" class="font-bold mt-4">Total: ৳0</p>
-        </aside>
+<section class="py-6 bg-green-50">
+  <h2 class="text-center text-3xl font-bold mb-8">Choose Your Trees</h2>
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 max-w-7xl mx-auto px-6">
+       
+    <aside class="lg:col-span-2">
+      <h3 class="font-semibold mb-4">Categories</h3>
+      <div id="all-categories" class="flex flex-col gap-2"></div>
+    </aside>
+
+    <main id="tree-container" class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    </main>
 
 
-        </div>
-    </section>
+    <aside class="lg:col-span-3">
+      <h3 class="font-semibold mb-4">Your Cart</h3>
+      <ul id="cart-list" class="space-y-2"></ul>
+      <p id="cart-total" class="font-bold mt-4">Total : ৳ 0</p>
+    </aside>
 
-
-
-
-
-
-
-
-
+  </div>
+</section>
 
 
 <!-- About Campaign -->
@@ -91,7 +85,16 @@
     </div>
 </section>
 
-
+<dialog id="plants_modal" class="modal modal-bottom sm:modal-middle">
+    <div class="modal-box">
+      <div id="details-container" class="space-y-5"></div>
+      <div class="modal-action">
+        <form method="dialog">
+          <button class="btn">Close</button>
+        </form>
+      </div>
+    </div>
+</dialog>
 
 <!-- Our Impact Section -->
     <section class="bg-[#CFF0DC] h-[500px]  lg:h-[400px]">
