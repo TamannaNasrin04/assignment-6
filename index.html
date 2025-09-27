@@ -13,37 +13,27 @@
 <body class="w-[1920px] max-w-full">
 <!-- Navbar -->
     <nav class="bg-[#15803D] flex justify-between items-center px-10 py-6">
-        <div class="text-[#FFFFFF] text-[24px]"> 
-            <h2 class="">Green Earth</h2>
-        </div>
+        <div class="text-[#FFFFFF] text-[24px]"><h2 class="">Green Earth</h2></div>
         <div class="flex gap-2 text-[#FFFFFF] font-sans font-normal text-base">
             <h3>About</h3>
             <h3>Gallery</h3>
             <h3>Plant a Tree</h3>
         </div>
-        <div>
-            <button class="btn rounded-full bg-[#FACC15] text-[#15803D] font-semibold px-6 py-2"> Plant a Tree</button>
-        </div>
+        <div><button class="btn rounded-full bg-[#FACC15] text-[#15803D] font-semibold px-6 py-2"> Plant a Tree</button></div>
     </nav>
 <!-- Banner -->
     <div class="relative h-[300px] bg-[#D1FAE5] overflow-hidden">
         <img src="assets/hero-leaf1.png" alt="" class="absolute left-0 bottom-0 h-[270px] hidden lg:block">
-
         <img src="assets/hero-leaf2.png" alt="" class="absolute right-0 bottom-0 h-[270px] hidden lg:block">
 
         <div class="text-center pt-24">
-            <h3 class="text-2xl lg:text-3xl  font-bold text-gray-900 mb-4">
-              Plant a Tree, Grow a Future
-            </h3>
-            <p class="text-gray-700 mx-auto max-w-xl mb-6">
-              Join our mission to plant 1 million trees and make the Earth greener for future generations.
-            </p>
-            <button class="btn rounded-full bg-[#FACC15] text-[#15803D] font-semibold px-6 py-2">
-              Get Involved
-            </button>
+            <h3 class="text-2xl lg:text-3xl  font-bold text-gray-900 mb-4">Plant a Tree, Grow a Future</h3>
+            <p class="text-gray-700 mx-auto max-w-xl mb-6">Join our mission to plant 1 million trees and make the Earth greener for future generations.</p>
+            <button class="btn rounded-full bg-[#FACC15] text-[#15803D] font-semibold px-6 py-2"> Get Involved</button>
         </div>
     </div>
 
+<!-- ⚙️ Functionalities -->
 <section class="py-6 bg-green-50">
   <h2 class="text-center text-3xl font-bold mb-8">Choose Your Trees</h2>
   <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 max-w-7xl mx-auto px-6">
@@ -53,27 +43,32 @@
       <div id="all-categories" class="flex flex-col gap-2"></div>
     </aside>
 
-    <main id="tree-container" class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    </main>
-
+    <main id="tree-container" class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></main>
 
     <aside class="lg:col-span-3">
       <h3 class="font-semibold mb-4">Your Cart</h3>
       <ul id="cart-list" class="space-y-2"></ul>
       <p id="cart-total" class="font-bold mt-4">Total : ৳ 0</p>
     </aside>
-
   </div>
 </section>
 
+<dialog id="plants_modal" class="modal modal-bottom sm:modal-middle ">
+    <div class="modal-box">
+      <div id="details-container" class="space-y-5"></div>
+      <div class="modal-action">
+        <form method="dialog">
+          <button class="btn">Close</button>
+        </form>
+      </div>
+    </div>
+</dialog>
 
 <!-- About Campaign -->
 <section class="py-16 bg-green-50">
     <h3 class="text-center mb-8 font-semibold text-4xl text-[#1F2937]">About the Campaign</h3>
     <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12 px-10">
-        <div class="flex justify-center">
-            <img src="/assets/about.png" class="rounded-lg max-w-full h-auto" alt="" >
-        </div>
+        <div class="flex justify-center"> <img src="/assets/about.png" class="rounded-lg max-w-full h-auto" alt="" > </div>
         <div class="p-6 text-gray-700">
             <p class="mb-4">Green Earth is a global tree plantation initiative dedicated to fighting climate change. Since our start, we’ve planted over 500,000 trees worldwide. By joining our campaign, you help restore forests, create habitats for wildlife, and combat global warming.</p>
             <ul class="mt-5 space-y-2 list-disc ml-4 ">
@@ -84,17 +79,6 @@
         </div>
     </div>
 </section>
-
-<dialog id="plants_modal" class="modal modal-bottom sm:modal-middle">
-    <div class="modal-box">
-      <div id="details-container" class="space-y-5"></div>
-      <div class="modal-action">
-        <form method="dialog">
-          <button class="btn">Close</button>
-        </form>
-      </div>
-    </div>
-</dialog>
 
 <!-- Our Impact Section -->
     <section class="bg-[#CFF0DC] h-[500px]  lg:h-[400px]">

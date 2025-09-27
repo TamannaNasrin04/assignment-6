@@ -93,7 +93,7 @@ const displayDetails = (plant) => {
             <h2 class="text-2xl font-bold">
               ${plant.name}</h2>
           </div>
-          <div class=""> <img class="w-full h-[400px]" src=${plant.image}/></div>
+          <div class=""> <img class="w-full h-[300px]" src=${plant.image}/></div>
           <div class="">
             <h2 class="font-bold">Category : ${plant.category}</h2>
             <p>Price: ৳ ${plant.price}</p>
